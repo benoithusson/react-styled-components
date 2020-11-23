@@ -1,7 +1,7 @@
-// Where we create the styled-component
-// Will be import on NavBar.js
-
 import styled from 'styled-components';
+import { FaMagento } from 'react-icons/fa';
+import { Link } from 'react-router-dom';
+import { Container } from '../../globalStyles';
 
 export const Nav = styled.nav`
     background: #101522;
@@ -13,4 +13,29 @@ export const Nav = styled.nav`
     position: sticky;
     top: 0;
     z-index: 999;
+    color: white;
+`;
+
+// Je créé un styled-component 'NavBarContainer' á partir du styled-component générique 'Container'
+// Ce styled-component générique est créé dans le fichier globalStyled.js
+export const NavBarContainer = styled(Container)`
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+
+    ${Container};
+`;
+
+export const NavLogo = styled(Link)`
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+`;
+
+export const NavIcon = styled(FaMagento)`
+    margin-right: 0.5rem;
 `;
