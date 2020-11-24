@@ -1,6 +1,7 @@
 import styled, { createGlobalStyle } from 'styled-components';
 
 // GlobalStyle qui sera ensuite disponible partout
+// C'est un styled component
 const GlobalStyle = createGlobalStyle`
 * {
     box-sizing: border-box;
