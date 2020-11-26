@@ -115,3 +115,25 @@ export const NavLinks = styled(Link)`
         transition: all 0.3s ease;
     }
 `;
+
+export const NavItemButton = styled.li`
+    @media screen and (max-width: 960px) {
+        width: 70%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+`;
+
+export const NavBtnLink = styled(Link)`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 8px 16px;
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+`;
